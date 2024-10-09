@@ -1,0 +1,531 @@
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+	cursor: url('images/cursor.png'), pointer;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@font-face {
+  font-family: 'HeroLegend';
+  src: url(Fonts/HeroesLegend.ttf);
+}
+
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(Fonts/LeagueSpartan-Bold.otf);
+}
+
+.Preload {
+	transition: none;
+}
+
+.Navigation {
+	height: 80px;
+	width: 1515px;
+	background-image: url("Images/Navground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin: 0 auto;
+	padding: 0 auto;
+	left: 0%;
+	right: 0%;
+	z-index: 2;
+	overflow-y: hidden;
+}
+
+.Logonavground {
+	margin-top: 5px;	 
+	width: 400px;
+	float: left;
+
+}
+
+.Navbuttons {
+	display: inline-flex;
+	float: right;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.Home {
+	margin-top: 20px;
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: yellow;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .5s;
+	
+}
+
+.Home:hover {
+	color: gold;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.Staff {
+	margin-top: 20px;
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: white;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .2s;
+}
+
+.Staff:hover {
+	color: yellow;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.Products {
+	margin-top: 20px;
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: white;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .5s;
+}
+
+.Products:hover {
+	color: yellow;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.Contact {
+	margin-top: 20px;	
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: white;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .5s;
+}
+
+.Contact:hover {
+	color: yellow;
+	font-size: 20px;
+	transition: .5s;
+}
+
+
+
+.TransparentArticle {
+	width: 1517px;
+	height: 500px;
+}
+
+
+.Article {
+	height: 500px;
+	width: 1400px;
+	background-image: linear-gradient(to bottom, maroon 15%, red 10%);
+
+}
+
+.FeaturedProductHeading {
+	padding-top: 15px;
+	padding-left: 15px;
+	font-family: HeroLegend;
+	font-size: 20px;
+	color: white;
+}
+
+.WebbyDevvyArticle {
+	width: 425px;
+	padding-top: 14px;
+	position: absolute;
+	z-index: 1;
+}
+
+.AndroidLogo {
+	position: absolute;
+	margin-top: -100px;
+	animation: DroidSpin 5s ease;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.AndroidLogo:hover {
+	animation: paused;
+	width: 100px;
+	margin-top: -100px;
+	margin-left: 1300px;
+}
+
+@-webkit-keyframes DroidSpin {
+
+        0% {
+        	width: 130px;
+        	margin-left: 1300px;
+        	transform: rotate(0deg);
+
+        }
+
+        25% {
+        	width: 100px;
+        	margin-left: 1300px;
+        	transform: rotate(-20deg);
+        }
+
+        50% {
+        	width: 130px;
+        	margin-left: 1300px;
+        	transform: rotate(0deg);
+        }
+
+        75% {
+        	width: 100px;
+        	margin-left: 1300px;
+        	transform: rotate(20deg);
+        }
+
+       100% {
+       	    width: 130px;
+        	margin-left: 1300px;
+        	transform: rotate(0deg);
+        }
+}
+
+
+.DescriptionBackground {
+	background-color: darkred;
+	width: 900px;
+	height: 355px;
+	margin-top: 50px;
+	margin-left: 465px;
+}
+
+.FeaturedProductDescription {
+	margin-top: 20px;
+	margin-left: 20px;
+	position: relative;
+	display: inline-flex;
+	color: white;
+	font-family: 'LeagueSpartan'; 
+	font-size: 25px;
+}
+
+.FeatureContainer {
+	margin-bottom: -25px;
+}
+
+@-webkit-keyframes rotate {
+     0% {
+     	transform: rotate(2deg);
+
+     }
+
+     25% {
+     	transform: rotate(-2deg);
+     }
+
+     75% {
+     	transform: rotate(2deg); 
+     }
+
+     100% {
+     	transform: rotate(-2deg);
+     }
+
+
+}
+
+.CheckedFeature {
+	font-size: 30px;
+	animation: rotate 3s infinite;
+	animation-direction: alternate;
+}
+
+.uno {
+    margin-top: -10px;
+    margin-left: 150px;
+  
+}
+
+.dos {
+	margin-top: -15px;
+	margin-left: 150px;
+}
+
+.tres {
+    margin-top: -15px;
+    margin-left: 150px;
+}
+
+.Feature {
+	font-family: 'LeagueSpartan';
+	font-size: 20px;
+	color: white;
+	margin-top: -25px;
+	margin-left: 60px;	
+	animation: rotate 3s infinite;
+	animation-direction: alternate;
+}
+
+.one {
+	margin-top: -30px;
+	margin-left: 200px;
+}
+
+.two {
+    margin-top: -30px;
+    margin-left: 200px;
+}
+
+.three {
+	margin-top: -30px;
+	margin-left: 200px;
+}
+
+.LearnMoreButton {
+	margin-top: 30px;
+	background-color: red;
+	font-family: 'HeroLegend';
+	border-style: none;
+	font-size: 20px;
+	float: right;
+	height: 62px;
+	transition: .5s;
+
+	
+}
+
+.LearnMoreButton:Hover {
+	color: gold;
+	background-color: darkred;
+	font-size: 25px;
+	margin-top: 15px;
+	transition: .5s;
+	height: 82px;
+	cursor: url('cursor.png'), pointer;
+
+}
+
+
+.TransparentContent {
+	width: 1517px; 
+	height: 850px;
+
+}
+
+.Content {
+    height: 785px;
+	width: 1450px; 
+	background-image: linear-gradient(to top right, darkgreen 30%, darkblue 70%);
+	text-align: center;
+	z-index: 3;
+	padding-top: 17px;
+}
+
+.DescriptionBackground2 {
+	background-color: white;
+    width: 1420px;
+    height: 770px; 
+	background-image: url('Images/Companydescription.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-y: hidden;
+	position: relative;
+}
+
+.Hakalogo {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	width: 250px;
+	transition: .5s;
+}
+
+.Hakalogo:hover {
+	margin-bottom: 0px;
+	margin-top: 20px;
+	width: 300px;
+	transition: .5s;
+}
+
+.Companydescription {
+	margin-top: 30px;
+	font-family: 'LeagueSpartan';
+	font-size: 25px;
+	margin-left: 200px;
+	margin-right: 200px;
+	color: white;
+	transition: .5s;
+	margin-bottom: 40px;
+
+}
+
+.Companydescription:hover {
+    font-size: 27px;
+    margin-left: 160px;
+    margin-right: 160px;
+    transition: .5s;
+    margin-top: -10px;
+    color: yellow;
+}
+
+.ExpandButton {
+   color: white;
+   width: 15%;
+   font-size: 30px;
+   font-family: 'HeroLegend';
+   background-image: linear-gradient(to top right, darkgreen, black, darkblue);
+   border-style: none;
+   transition: .5s;
+}
+
+
+.ExpandButton:hover {
+	width: 18%;
+	transition: .5s;
+}
+
+.Mission{
+	margin-top: 60px;
+	font-family: 'LeagueSpartan';
+	color: white;
+	font-size: 20px;
+	display: none;
+	margin-left: 100px;
+	margin-right: 750px;
+	margin-bottom: 40px;
+	transition: .5s;
+	text-align: left;
+	position: absolute;
+
+}
+
+.Mission:hover {
+	font-size: 22px;
+	transition: .5s;
+	position: absolute;
+	color: yellow;
+}
+
+.MissionHighlight {
+	font-size: 30px;
+	color: gold;
+}
+
+.Vision {
+	margin-top: 60px;
+	font-family: 'LeagueSpartan';
+	color: white;
+	font-size: 20px;
+	display: none;
+	margin-left: 750px;
+	margin-right: 100px;
+	margin-bottom: 40px;
+	transition: .5s;
+	text-align: right;
+	position: absolute;
+
+}
+
+.Vision:hover {
+	transition: .5s;
+	font-size: 22px;
+	position: absolute;
+	color: lime;
+}
+
+.VisionHighlight {
+	font-size: 30px;
+	color: lime;
+
+}
+
+
+
+
+
+
+
+.Footer {
+	height: 140px;
+	width: 1515px;
+	background-image: url("Images/Navground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin: 0 auto;
+	padding: 0 auto;
+	left: 0%;
+	right: 0%;
+	z-index: 2;
+	overflow-y: hidden;
+	position: relative;
+}
+
+.FooterDivider {
+	background-color: black;
+	width: 850px;
+	height: 100%;
+	position: absolute;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.FooterInfo {
+	margin-top: 58px;
+	margin-left: 55px;
+	font-family: 'LeagueSpartan';
+	color: white;
+	font-size: 25px;
+	position: relative;
+}
+
+.FooterDividerTwo {
+	display: inline-flex;
+	position: relative;
+	margin-left: 850px;
+	margin-top: 0px;
+	width: 665px;
+	height: 140px;
+
+}
+
+.FacebookSize {
+	width: 220px;
+	margin-left: 0px;
+}
+
+.FacebookLink {
+	text-decoration: none;
+
+}
+
+.FacebookLinkMargin {
+	font-family: 'LeagueSpartan';
+	color: white;
+	font-size: 25px;
+	margin-top: 60px;
+	margin-left: -70px;
+	transition: .5s
+}
+
+.FacebookLinkMargin:hover {
+	font-size: 30px;
+	transition: .5s;
+	color: yellow;
+}

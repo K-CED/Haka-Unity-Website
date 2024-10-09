@@ -1,0 +1,1483 @@
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+	cursor: url('images/cursor.png'), pointer;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@font-face {
+  font-family: 'HeroLegend';
+  src: url(Fonts/HeroesLegend.ttf);
+}
+
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(Fonts/LeagueSpartan-Bold.otf);
+}
+
+.Preload {
+	transition: none;
+}
+
+.Navigation {
+	height: 80px;
+	width: 1515px;
+	background-image: url("Images/Navground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin: 0 auto;
+	padding: 0 auto;
+	left: 0%;
+	right: 0%;
+	z-index: 400;
+	overflow-y: hidden;
+}
+
+.Logonavground {
+	margin-top: 5px;	 
+	width: 400px;
+	float: left;
+
+}
+
+.Navbuttons {
+	display: inline-flex;
+	float: right;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.Home {
+	margin-top: 20px;
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: white;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .5s;
+	
+}
+
+.Home:hover {
+	color: yellow;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.Staff {
+	margin-top: 20px;
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: yellow;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .2s;
+}
+
+.Staff:hover {
+	color: gold;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.Products {
+	margin-top: 20px;
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: white;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .5s;
+}																																																																																																																																																																																																																																									
+
+.Products:hover {
+	color: yellow;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.Contact {
+	margin-top: 20px;	
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: white;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .5s;
+}
+
+.Contact:hover {
+	color: yellow;
+	font-size: 20px;
+	transition: .5s;
+}
+
+
+
+.StaffContent {
+	/* background-image: linear-gradient(to bottom, black 20%, darkblue 70%, skyblue 100%);*/
+	background-image: radial-gradient(circle at bottom, skyblue 5%, darkblue 45%,black 90% );
+	width: 1535px;
+ height: 678px; 
+ /*  	height: 3400px; */
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	justify-content: center;
+	align-items: center;
+	/*align-content: center;*/
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STARS */
+
+.StarOne {
+	position: absolute;
+	width: 20px;
+	margin-left: -1000px;
+	margin-top: 250px;
+	animation: SpinStarONE 7s linear forwards; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarONE {
+	0% {
+		transform: rotate(20deg);
+	}
+
+	100% {
+		transform: rotate(365deg);
+	}
+}
+
+.StarTwo {
+	position: absolute;
+	width: 40px;
+	margin-left: -1000px;
+	margin-top: 250px;
+	animation: SpinStarTWO 7s linear forwards; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarTWO {
+	0% {
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		transform: rotate(-365deg);
+	}
+}
+
+.StarThree {
+	position: absolute;
+	width: 60px;
+	margin-left: -1000px;
+	margin-top: 250px;
+	animation: SpinStarTHREE 1s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarTHREE {
+	0% {
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		transform: rotate(-365deg);
+	}
+}
+
+.StarFour {
+	position: absolute;
+	width: 65px;
+	margin-left: -1000px;
+	margin-top: 149px;
+	animation: SpinStarFOUR 1s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarFOUR {
+	0% {
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		transform: rotate(-365deg);
+	}
+}
+
+
+.StarFive {
+	position: absolute;
+	width: 65px;
+	margin-left: -1000px;
+	margin-top: 300px;
+	animation: SpinStarFIVE 2s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarFIVE {
+	0% {
+		transform: rotate(-20deg);
+	}
+
+	100% {
+		transform: rotate(335deg);
+	}
+}
+
+
+.StarSix {
+	position: absolute;
+	width: 42px;
+	margin-left: -1000px;
+	margin-top: 400px;
+	animation: SpinStarSIX 5s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarSIX {
+	0% {
+		transform: rotate(40deg);
+	}
+
+	100% {
+		transform: rotate(335deg);
+	}
+}
+
+.StarSeven {
+	position: absolute;
+	width: 55px;
+	margin-left: -1000px;
+	margin-top: 400px;
+	animation: SpinStarSEVEN 5s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarSEVEN {
+	0% {
+		transform: rotate(40deg);
+	}
+
+	100% {
+		transform: rotate(335deg);
+	}
+}
+
+
+
+
+
+.StarEight {
+	position: absolute;
+	width: 25px;
+	margin-left: -1000px;
+	margin-top: 400px;
+	animation: SpinStarEIGHT 5s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarEIGHT {
+	0% {
+		transform: rotate(40deg);
+	}
+
+	100% {
+		transform: rotate(335deg);
+	}
+}
+
+
+.StarNine {
+	position: absolute;
+	width: 67px;
+	margin-left: -1000px;
+	margin-top: 400px;
+	animation: SpinStarNINE 5s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarNINE {
+	0% {
+		transform: rotate(40deg);
+	}
+
+	100% {
+		transform: rotate(335deg);
+	}
+}
+
+.StarTen {
+	position: absolute;
+	width: 73px;
+	margin-left: -1000px;
+	margin-top: 100px;
+	animation: SpinStarTEN 3s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarTEN {
+	0% {
+		transform: rotate(-50deg);
+	}
+
+	100% {
+		transform: rotate(218deg);
+	}
+}
+
+
+.StarEleven {
+	position: absolute;
+	width: 80px;
+	margin-left: -1000px;
+	margin-top: 150px;
+	animation: SpinStarELEVEN 8s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarELEVEN {
+	0% {
+		transform: rotate(-50deg);
+	}
+
+	100% {
+		transform: rotate(-218deg);
+	}
+}
+
+
+.StarTwelve {
+	position: absolute;
+	width: 80px;
+	margin-left: -1000px;
+	margin-top: 400px;
+	animation: SpinStarTWELVE 2s linear infinite; 
+	opacity: 1;
+	z-index: 10;
+}
+
+@keyframes SpinStarTWELVE {
+	0% {
+		transform: rotate(4deg);
+	}
+
+	100% {
+		transform: rotate(218deg);
+	}
+}
+
+
+
+
+
+
+.StaticStarOne {
+	position: absolute;
+	width: 80px;
+	margin-left: -650px;
+	margin-top: 100px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+.StaticStarTwo {
+	position: absolute;
+	width: 130px;
+	margin-left: -100px;
+	margin-top: 50px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+.StaticStarThree {
+	position: absolute;
+	width: 100px;
+	margin-left: -400px;
+	margin-top: 10px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+.StaticStarFour {
+	position: absolute;
+	width: 89px;
+	margin-left: 200px;
+	margin-top: 10px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+.StaticStarFive {
+	position: absolute;
+	width: 120px;
+	margin-left: 100px;
+	margin-top: 310px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+.StaticStarSix {
+	position: absolute;
+	width: 70px;
+	margin-left: 450px;
+	margin-top: 350px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+.StaticStarSeven {
+	position: absolute;
+	width: 100px;
+	margin-left: 590px;
+	margin-top: 220px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+
+
+.StaticStarEight {
+	position: absolute;
+	width: 130px;
+	margin-left: 400px;
+	margin-top: 60px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+.StaticStarNine {
+	position: absolute;
+	width: 160px;
+	margin-left: -300px;
+	margin-top: 340px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+.StaticStarTen {
+	position: absolute;
+	width: 114px;
+	margin-left: -700px;
+	margin-top: 300px;
+	opacity: 1;
+	display: none;
+	z-index: 100;
+}
+
+.MiniStar {
+	width: 1550px;
+    position: absolute;
+    margin-top: -160px;
+    margin-left: -770px;
+    display: none;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+/* STARS */
+
+.leftline {
+	position: absolute;
+	width: 10px;
+	height: 0px;
+    background-image: linear-gradient(150deg, fuchsia, pink, silver);
+    margin-top: 185px;
+    margin-left: 260px;
+    z-index: 101;
+}
+
+.topline {
+	position: absolute;
+	width: 0px;
+	height: 10px;
+    background-image: linear-gradient(to right, fuchsia, pink, silver);
+    margin-top: 185px;
+    margin-left: 270px;
+    z-index: 101;
+}
+
+.WelcomeText {
+	font-size: 20px;
+	font-family: HeroLegend;
+	background-image: linear-gradient(to bottom, fuchsia 20%, pink 50%, pink 80%);
+	background-size: 100%;
+	background-color: #f3ec78;
+	background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    margin-top: 193px;
+    margin-left: 480px;
+    position: absolute;
+    z-index: 101;
+}
+
+
+
+.bottomline {
+	position: absolute;
+	width: 0px;
+	height: 10px;
+	background-image: linear-gradient(to right, silver, pink, fuchsia );
+	margin-top: 265px;
+	margin-left: 1265px;
+	z-index: 101;
+}
+
+.rightline {
+	position: absolute;
+	width: 10px;
+	height: 0px;
+    background-image: linear-gradient(-150deg, silver , pink, fuchsia);
+    margin-top: 275px;
+    margin-left: 1255px;
+    z-index: 101;
+}
+
+
+
+
+
+
+
+@keyframes poppingone {
+	0% {
+		margin-top: 600px;
+		
+	}
+
+	100% {
+		margin-top: 570px;
+	}
+}
+
+ 
+@keyframes poppingtwo {
+	0% {
+		margin-top: 600px;
+	}
+
+	100% {
+		margin-top: 510px;
+	}
+}
+
+
+
+@keyframes poppingthree {
+	0% {
+		margin-top: 600px;
+	}
+
+	100% {
+		margin-top: 510px;
+	}
+}
+
+
+.HexaDANCEone {
+	margin-top: 640px;
+    position: absolute;
+    margin-left: -800px;
+    z-index: 12;
+    animation: poppingone .25s infinite alternate;
+}
+
+
+.HexaDANCEtwo {
+	margin-top: 600px;
+    position: absolute;
+    margin-left: -500px;
+    z-index: 11;
+    animation: poppingtwo .25s infinite alternate;
+}
+
+
+.HexaDANCEthree {
+	margin-top: 640px;
+    position: absolute;
+    margin-left: -200px;
+    z-index: 12;
+    animation: poppingone .25s infinite alternate;
+}
+
+.HexaDANCEfour {
+	margin-top: 600px;
+    position: absolute;
+    margin-left: 100px;
+    z-index: 11;
+    animation: poppingthree .25s infinite alternate;
+
+}
+
+.HexaDANCEfive {
+	margin-top: 640px;
+    position: absolute;
+    margin-left: 400px;
+    z-index: 12;
+    animation: poppingone .25s infinite alternate;
+}
+
+.Quote {
+	font-size: 35px;
+	font-family: LeagueSpartan;
+	background-image: linear-gradient(to bottom, violet 20%, pink 50%, pink 80%);
+	background-size: 100%;
+	background-color: #f3ec78;
+	background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    margin-top: 593px;
+    margin-left: 470px;
+    position: absolute;
+    z-index: 6;
+    display: none;
+    animation: glowtext 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes glowtext {
+  from {
+    text-shadow:  0 0px 50px transparent, 0 0px 50px transparent;
+  }
+  
+  to {
+    text-shadow:  0 0px 20px white, 0 0px 30px white, 0 0px 40px fuchsia;
+  }
+}
+
+.video {
+	position: absolute;
+	margin-top: -100px;
+	margin-left: -1480px;
+	z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.KurtHexagon {
+	
+	margin-top: 700px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+.nametagOne {
+	filter: drop-shadow(0 -10px 10px fuchsia);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 600px;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 550px;
+    z-index: 20;
+    display: none;
+
+}
+
+.KurtSECTION {
+	box-shadow: 0 0 30px pink, 0 0 40px pink, 0 0 20px fuchsia;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, darkviolet 8%, white 15%);
+	margin-top: 723px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameOne {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+
+}
+
+.DescriptionOne {
+	margin-left: 85px;
+	margin-top: 40px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.AldrynHexagon {
+	margin-top: 970px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+.nametagTwo {
+	filter: drop-shadow(0 -10px 10px fuchsia);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 690px;
+    position: absolute;
+    margin-top: 970px;
+    margin-left: 500px;
+    z-index: 20;
+    display: none;
+
+}
+
+.AldrynSECTION {
+	box-shadow: 0 0 30px pink, 0 0 40px pink, 0 0 20px fuchsia;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, darkviolet 8%, white 15%);
+	margin-top: 993px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameTwo {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+}
+
+.DescriptionTwo {
+	margin-left: 85px;
+	margin-top: 40px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.NicsHexagon {
+	
+	margin-top: 1240px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+.nametagThree {
+	filter: drop-shadow(0 -10px 10px fuchsia);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 710px;
+    position: absolute;
+    margin-top: 1240px;
+    margin-left: 495px;
+    z-index: 20;
+    display: none;
+
+}
+
+.NicsSECTION {
+	box-shadow: 0 0 30px pink, 0 0 40px pink, 0 0 20px fuchsia;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, darkviolet 6%, white 15%);
+	margin-top: 1263px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameThree {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+}
+
+.DescriptionThree {
+	margin-left: 85px;
+	margin-top: 60px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.ClaireHexagon {
+	
+	margin-top: 1510px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+.nametagFour {
+	filter: drop-shadow(0 -10px 10px pink);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 845px;
+    position: absolute;
+    margin-top: 1510px;
+    margin-left: 430px;
+    z-index: 20;
+    display: none;
+
+}
+
+.ClaireSECTION {
+	box-shadow: 0 0 30px skyblue, 0 0 40px fuchsia, 0 0 20px pink;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, violet 3%, white 15%);
+	margin-top: 1533px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameFour {
+	margin-top: 10px;
+	font-size: 17px;
+	font-family: LeagueSpartan;
+}
+
+.DescriptionFour {
+	margin-left: 85px;
+	margin-top: 50px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.AngelynHexagon {
+	
+	margin-top: 1780px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+.nametagFive {
+	filter: drop-shadow(0 -10px 10px darkviolet);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 720px;
+    position: absolute;
+    margin-top: 1780px;
+    margin-left: 495px;
+    z-index: 20;
+    display: none;
+
+}
+
+.AngelynSECTION {
+	box-shadow: 0 0 30px violet, 0 0 40px black, 0 0 20px white;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, violet 1%, white 15%);
+	margin-top: 1803px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameFive {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+}
+
+.DescriptionFive {
+	margin-left: 85px;
+	margin-top: 50px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FranzHexagon {
+	
+	margin-top: 2050px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+
+.nametagSix {
+	filter: drop-shadow(0 -10px 10px darkviolet);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 650px;
+    position: absolute;
+    margin-top: 2050px;
+    margin-left: 525px;
+    z-index: 20;
+    display: none;
+
+}
+
+.FranzSECTION {
+	box-shadow: 0 0 30px violet, 0 0 40px black, 0 0 20px black;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, pink 0%, white 15%);
+	margin-top: 2073px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameSix {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+}
+
+.DescriptionSix {
+	margin-left: 85px;
+	margin-top: 60px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.JamesHexagon {
+	
+	margin-top: 2320px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+.nametagSeven {
+	filter: drop-shadow(0 -10px 10px darkviolet);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 620px;
+    position: absolute;
+    margin-top: 2320px;
+    margin-left: 540px;
+    z-index: 20;
+    display: none;
+
+}
+
+.JamesSECTION {
+	box-shadow: 0 0 30px violet, 0 0 40px black, 0 0 20px black;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, pink -5%, white 15%);
+	margin-top: 2343px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameSeven {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+}
+
+.DescriptionSeven {
+	margin-left: 85px;
+	margin-top: 60px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.JohnHexagon {
+	margin-top: 2590px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+.nametagEight {
+	filter: drop-shadow(0 -10px 10px darkviolet);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 660px;
+    position: absolute;
+    margin-top: 2590px;
+    margin-left: 520px;
+    z-index: 20;
+    display: none;
+
+}
+
+.JohnSECTION {
+	box-shadow: 0 0 30px violet, 0 0 40px black, 0 0 20px black;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, pink -10%, white 15%);
+	margin-top: 2613px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameEight {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+}
+
+.DescriptionEight {
+	margin-left: 85px;
+	margin-top: 60px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.YuriHexagon {
+	
+	margin-top: 2860px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+.nametagNine {
+	filter: drop-shadow(0 -10px 10px darkviolet);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 830px;
+    position: absolute;
+    margin-top: 2860px;
+    margin-left: 440px;
+    z-index: 20;
+    display: none;
+
+}
+
+.YuriSECTION {
+	box-shadow: 0 0 30px violet, 0 0 40px black, 0 0 20px black;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, pink -15%, white 15%);
+	margin-top: 2883px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameNine {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+}
+
+.DescriptionNine {
+	margin-left: 85px;
+	margin-top: 65px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.JaisonHexagon {
+	
+	margin-top: 3130px;
+	margin-left: -650px;
+	position: absolute;
+	width: 300px;
+	z-index: 10;
+	display: none;
+}
+
+.nametagTen {
+	filter: drop-shadow(0 -10px 10px darkviolet);
+	border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 480px;
+    position: absolute;
+    margin-top: 3130px;
+    margin-left: 615px;
+    z-index: 20; 
+    display: none;
+
+}
+
+.JaisonSECTION {
+	box-shadow: 0 0 30px violet, 0 0 40px black, 0 0 20px black;
+	position: absolute;
+	width: 1085px;
+	height: 200px;
+	background-image: linear-gradient(179deg, pink -20%, white 15%);
+	margin-top: 3153px;
+	margin-left: 300px;
+	border-radius: 40px;
+	z-index: 9;
+	display: none;
+}
+
+.FullnameTen {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+}
+
+.DescriptionTen {
+	margin-left: 85px;
+	margin-top: 65px;
+	font-size: 18px;
+	font-family: LeagueSpartan;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Footer {
+	height: 140px;
+	width: 1515px;
+	background-image: url("Images/Navground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin: 0 auto;
+	padding: 0 auto;
+	left: 0%;
+	right: 0%;
+	z-index: 2;
+	overflow-y: hidden;
+	position: relative;
+	display: none;
+}
+
+.FooterDivider {
+	background-color: black;
+	width: 850px;
+	height: 100%;
+	position: absolute;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.FooterInfo {
+	margin-top: 58px;
+	margin-left: 55px;
+	font-family: 'LeagueSpartan';
+	color: white;
+	font-size: 25px;
+	position: relative;
+}
+
+.FooterDividerTwo {
+	display: inline-flex;
+	position: relative;
+	margin-left: 850px;
+	margin-top: 0px;
+	width: 665px;
+	height: 140px;
+
+}
+
+.FacebookSize {
+	width: 220px;
+	margin-left: 0px;
+}
+
+.FacebookLink {
+	text-decoration: none;
+
+}
+
+.FacebookLinkMargin {
+	font-family: 'LeagueSpartan';
+	color: white;
+	font-size: 25px;
+	margin-top: 60px;
+	margin-left: -70px;
+	transition: .5s
+}
+
+.FacebookLinkMargin:hover {
+	font-size: 30px;
+	transition: .5s;
+	color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+

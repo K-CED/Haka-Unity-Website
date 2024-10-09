@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="ProductPageDesign.css">
+</head>
+<body background="Images/Hexaground.jpg" class="Preload">
+
+
+	<audio id="hoveraudio" src="soundeffects/soundblip.mp3"></audio>
+    <audio id="clickaudio" src="soundeffects/clicksounds.mp3"></audio>
+
+   
+
+
+
+
+
+	<div class="WholePage">
+		<div class="Navigation">
+			<a href="HomePage.html"><img src="Images/Logonavground.png" class="Logonavground" onmouseover="play()"></a>
+			<a href="Contacts.html" class="Contact" onmouseover="play()"><p>CONTACT US</p></a>
+			<a href="ProductPage.html" class="Products" onmouseover="play()"><p>PRODUCTS</p></a>
+			<a href="StaffPage.html" class="Staff" onmouseover="play()"><p>THE STAFF</p></a>
+			<a href="HomePage.html" class="Home" onmouseover="play()"><p class="hidearticle">HOME</p></a>
+		</div>
+
+
+
+		<div class="hidden" id="ProductContent">
+
+
+		      <img src="Images/Octagonheading.png" class="OctagonHeading" onmouseover="play()">	
+                <p class="ProductHeading">Webby Devvy</p>
+
+          <img src="Images/Webbydevvylogo.png" class="hiddenImage" id="AppLogo" onmouseover="EnlargeLogo(); play()" onmouseout="NormalLogo()">
+                <p class="hiddenmessage" id="message" onmouseover="EnlargeLogo()" onmouseout="NormalLogo()">!APP LOGO!</p>
+
+              <div class="hiddentwo" id="AppDescriptionContent">
+              	<p class="AppDescription">"Webby Devvy" is a mobile application that has been developed for students that has hard time with coding HTML and CSS, from simple and basic fill-in-the-blank questions to making full-fledged programs that users must finish to advance to the next phase. As students, HAKA UNITY understands the difficulty in learning programming languages due to their complex nature, we aim to ease the effect of that problem with WEBBY DEVVY.</p>
+              </div>
+
+
+<!--- DIVIDER --->
+
+        <!--   <img src="Images/Topbackground.png" class="Toppart"> -->
+
+            <video muted loop width="1690" height="900" autoplay="autoplay" class="video">
+              <source src="videos/hexadevvy.mp4" type="video/mp4"/>
+            </video>
+
+           <img src="Images/Octagonheading.png" class="OctagonScreenshots" id="OctagonScreenshots">
+                  <p class="ScreenshotHeading" id="ScreenshotHeading">App Contents</p>
+
+
+                  <div class="hiddenthree" id="AppScreenshotsContent">
+                    	<img src="Images/Homepage.png" class="FirstPhone" onmouseover="FirstFeatureIn(); play()" onmouseout="FirstFeatureOut()">
+                  </div>
+              
+                  <div class="toolTipOne" id="ScreenshotInfoOne" onmouseover="RetainHexagonOne()" onmouseout="RetainHexagonOneAgain()">              
+                    	<img src="Images/Phonetip.png" class="HexagonOne" >
+                      <p class="toolTipParagraph" onmouseover="clicksound()">HOMEPAGE OF <br> WEBBY DEVVY WITH AN <br> OVERVIEW ABOUT WEB DESIGN <br> AND WEB DEVELOPMENT WITH SOME <br> INFORMATION ON HOW YOU CAN <br> CHOOSE A COURSE FOR <br> YOUR  FUTURE.</p>
+                  </div>
+
+
+
+
+
+                  <div class="hiddenfour" id="AppScreenshotsContenttwo">
+                    	<img src="Images/HTMLPage.png" class="SecondPhone" onmouseover="SecondFeatureIn(); play()" onmouseout="SecondFeatureOut()">
+                  </div>
+
+                  <div class="toolTipTwo" id="ScreenshotInfoTwo" onmouseover="RetainHexagonTwo()" onmouseout="RetainHexagonTwoAgain()">              
+                      <img src="Images/Phonetip.png" class="HexagonTwo" >
+                      <p class="toolTipParagraphTwo" onmouseover="clicksound()">THIS IS THE HTML CATEGORY <br> WHERE YOU CAN LEARN ABOUT <br>  THE BASIC SYNTAXES AND ITS <br> PURPOSE FOR WEB DEVELOPMENT. <br> THIS PAGE IS SCROLLABLE AND <br> THE CONTENTS ARE ACCESSIBLE <br> OFFLINE.</p>
+                  </div>
+
+
+
+
+
+
+                  <div class="hiddenfive" id="AppScreenshotsContentthree" >
+                    	<img src="Images/HTMLContents.png" class="ThirdPhone" onmouseover="ThirdFeatureIn(); play()" onmouseout="ThirdFeatureOut()">
+                  </div>
+
+                  <div class="toolTipThree" id="ScreenshotInfoThree" onmouseover="RetainHexagonThree()" onmouseout="RetainHexagonThreeAgain()">              
+                      <img src="Images/Phonetip.png" class="HexagonThree" >
+                      <p class="toolTipParagraphThree" onmouseover="clicksound()">PICKING AN ELEMENT TAKES <br> YOU HERE. THIS PROVIDES <br> THE DEFINITION OF A TERM AS <br> WELL AS A VISUAL OUTPUT IN  <br> ORDER UNDERSTAND THE SYNTAX <br> BETTER. A SHORT QUIZ IS <br> AVAILABLE AS WELL.<br> </p>
+                  </div>
+
+
+
+
+                  <div class="hiddensix" id="AppScreenshotsContentfour" >
+                      <img src="Images/CSSPage.png" class="FourthPhone" onmouseover="FourthFeatureIn(); play()" onmouseout="FourthFeatureOut()">
+                  </div>
+
+                  <div class="toolTipFour" id="ScreenshotInfoFour" onmouseover="RetainHexagonFour()" onmouseout="RetainHexagonFourAgain()">       
+                      <img src="Images/Phonetip.png" class="HexagonFour" >
+                      <p class="toolTipParagraphFour" onmouseover="clicksound()">THIS IS THE CSS CATEGORY <br> WHERE YOU CAN LEARN ABOUT <br>  THE BASIC SYNTAXES AND ITS <br> PURPOSE FOR WEB DEVELOPMENT <br> WHILE INCORPORATING IT WITH  <br> HTML. THIS PAGE IS SCROLLABLE  <br>AND THE CONTENTS ARE  <br>ACCESSIBLE OFFLINE.</p>
+                  </div>
+              
+
+
+
+                  <div class="hiddenseven" id="AppScreenshotsContentfive" >
+                      <img src="Images/CSSContent.png" class="FifthPhone" onmouseover="FifthFeatureIn(); play()" onmouseout="FifthFeatureOut()">
+                  </div>
+
+                  <div class="toolTipFive" id="ScreenshotInfoFive" onmouseover="RetainHexagonFive()" onmouseout="RetainHexagonFiveAgain()">       
+                      <img src="Images/Phonetip.png" class="HexagonFive" >
+                      <p class="toolTipParagraphFive" onmouseover="clicksound()">LEARN THE SYNTAX OF CSS <br> WHERE YOU CAN LEARN ABOUT <br> MANIPULATING DESIGN ATTRIBUTES <br> TO MAKE YOUR WEBSITE LOOK GOOD.<br> IT ALSO PROVIDES A CLEAR VISUAL <br> OUTPUT IN ORDER FOR YOU TO <br> INCORPORATE THESE TO HTML <br>WITHOUT EASE.</p>
+                  </div>
+
+
+
+                  <div class="hiddeneigth" id="AppScreenshotsContentsix" >
+                      <img src="Images/SettingsPage.png" class="SixthPhone" onmouseover="SixthFeatureIn(); play()" onmouseout="SixthFeatureOut()">
+                  </div>
+
+                  <div class="toolTipSix" id="ScreenshotInfoSix" onmouseover="RetainHexagonSix()" onmouseout="RetainHexagonSixAgain()">       
+                      <img src="Images/Phonetip.png" class="HexagonSix" >
+                      <p class="toolTipParagraphSix" onmouseover="clicksound()"> CUSTOMIZE YOUR EXPERIENCE  <br> BY TOGGLING THE THEME FROM LIGHT <br> TO DARK OR DARK TO LIGHT. MORE  <br> OPTIONS ARE ALSO AVAILABLE.</p>
+                  </div>
+
+
+<!--- DIVIDER --->
+       <div class="border">
+         
+       </div>
+         <div class="ContainerSpecs">
+           
+         </div>
+          <img src="Images/Octagonheading.png" class="OctagonSpecs" id="OctagonSpecs">
+                  <p class="SpecsHeading" id="SpecsHeading">App Specifications</p>
+
+                  <div class="SpecsOne" onmouseenter="SpecInfoOne(); play()" onmouseleave="RemoveSpecInfoOne()" onclick="EnlargeOS(); clicksound()" ondblclick="ResetOS()">
+                    <p class="SpecsDescOne"><span>OPERATING SYSTEM:</span> &nbsp &nbsp &nbsp Android 4.1 and Up</p>
+                    <p class="OSDefinition"> <span>WHAT IS AN OPERATING SYSTEM? </span> <br> <br> An Operating System (OS) is responsible for running applications, specifically for mobile devices. An example of an operating system is Android which is an open source software, meaning that the user can customize the architecture and the flow of the system. When we say customizing, this can be done by installing a custom firmware for your phone. An Operating System is a very important component inside a device. Without this, your smartphone will not function the way it should be. </p>
+                    <img src="Images/S10.png" class="GalaxyS10">
+                    <img src="Images/P30.png" class="P30">
+                    <img src="Images/Oneplus.png" class="Oneplus">
+                    <img src="Images/Pixel3.png" class="Pixel3">
+                    <img src="Images/Xperia.png" class="Xperia">
+                    <img src="Images/Samsung.png" class="S7edge">
+                    <img src="Images/Vivo.png" class="Vivo">
+
+                    <img src="Images/Chrome.png" class="Chrome" onmouseover="showChrometext(); play()" onmouseout="hideChrometext()">
+                    <p class="IconOne">Google Chrome</p>
+
+                    <img src="Images/Youtube.png" class="Youtube"  onmouseover="showYTtext(); play()" onmouseout="hideYTtext()">
+                    <p class="IconTwo">YouTube</p>
+
+                    <img src="Images/Discord.png" class="Discord"  onmouseover="showDiscordtext(); play()" onmouseout="hideDiscordtext()">
+                    <p class="IconThree">Discord</p>
+
+                    <img src="Images/Militia.png" class="Militia"  onmouseover="showMMtext(); play()" onmouseout="hideMMtext()">
+                    <p class="IconFour">Mini Militia</p>
+
+                    <img src="Images/Reaction.png" class="Reaction" onmouseover="showReacttext(); play()" onmouseout="hideReacttext()">
+                    <p class="IconFive">Chain Reaction</p>
+
+
+                    <img src="Images/Androidies.png" class="Androidies">
+
+
+                  </div>
+
+
+
+
+
+
+
+
+
+                  <div class="SpecsTwo" onmouseenter="SpecInfoTwo(); play()" onmouseleave="RemoveSpecInfoTwo()" onclick="EnlargeRAM(); clicksound()" ondblclick="ResetRAM()">
+                    <p class="SpecsDescTwo"><span>RAM:</span> &nbsp &nbsp &nbsp 500MB and Up</p>
+                    <p class="RAMDefinition"> <span>WHAT IS A RAM? </span> <br> <br> A Random Access Memory (RAM) is where an application or software resides while it is running, along with the data it is using. Both the OS and application software use RAM. Devices with more RAM can run more complex software and/or more applications at one time. Moving data into and out of RAM takes time. If data needs to be moved out of RAM to make room for other data, this can bring everything to a halt for a moment.</p>
+                    <img src="Images/Ram.jpg" class="ramchip">
+                    <img src="Images/Ramies.png" class="Ramies">
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="SpecsThree" onmouseenter="SpecInfoThree(); play()" onmouseleave="RemoveSpecInfoThree()" onclick="EnlargeCHIP(); clicksound()" ondblclick="ResetCHIP()">
+                    <p class="SpecsDescThree"><span>SoC / CHIPSET:</span> &nbsp &nbsp &nbsp TI OMAP 4460 or Greater.</p>
+                    
+                    <p class="CHIPDefinition"> <span>WHAT IS A CHIPSET? </span> <br> <br> A chipset is commonly known as a "Processor". This is responsible for everything in your smartphone such as booting up, running apps, executing commands, utilization of biometrics and many more. There are many types of processors for mobile phones. Examples are: Kirin, Mediatek, Exynos, Snapdragon, and many more. High-end chipsets maintain the device from overheating because it surpasses the high-processing power of applications.  </p>
+                    <img src="Images/Chipset.jpg" class="Chipset">
+                    <img src="Images/CPU.png" class="CPU">
+                  </div>
+
+
+
+
+
+
+
+
+                  <div class="SpecsFour" onmouseenter="SpecInfoFour(); play()" onmouseleave="RemoveSpecInfoFour()" onclick="EnlargeROM(); clicksound()" ondblclick="ResetROM()">
+                    <p class="SpecsDescFour"><span>ROM / STORAGE:</span> &nbsp &nbsp &nbsp Atleast 1GB or More.</p>
+                       
+                        <p class="ROMDefinition"> <span>WHAT IS A ROM? </span> <br> <br> A ROM stores files from your device. Think of it as a container that stores data virtually. Each device has different storage sizes. It can be 8GB, 16GB, 64GB, 512GB, and even 1TB of storage. Shutting down the device does not format or delete your saved files. Both ROMS can be external or internal. Internal storage built within the phone itself. You can not expand the size of this but you can get an external storage such as an "SD Card" so you can expand your phone's storage and eventually insert additional files as you wish. <br> <br> <br>
+
+                        <span> Pro Tip: If you want to know more about the specs of your device, you can download "CPU-Z" from the Google Play Store for free. This app states the full specs of your phone not just the storage, cpu, gpu, and ram. </span></p>
+                        <img src="Images/ROM.jpg" class="ROM">
+                        <img src="Images/Storage.png" class="Storage">
+                  </div>
+
+
+
+
+
+
+               <p class="VideoText" id="VideoText">Application Trailer</p>
+               <img src="Images/Octagonheading.png" class="VideoHeading" id="VideoHeading">
+
+                  <video controls  width="817" height="460" autoplay="" class="appteaser" poster="Images/TeaserThumbnail.png">
+                    <source src="videos/AppTeaser.mp4" type="video/mp4"/>
+                  </video>
+
+               <div class="instructions">
+                 <p class="tutorial"> DOWNLOAD HERE:</p>
+                 <div class="drivegooglecontainer">
+                   <p class="Googledrive">Google Drive</p>
+                   <a href="https://drive.google.com/file/d/1oXkbQD4iJ3LGPwmdHpgpIqrvfLF5J1Ec/view?fbclid=IwAR033eum9fI7MNLI1GxJLkuUzjnXQy9UfPJrYZMitQn5deT0yY0gmmo-Yxk"><img src="Images/Drivelogo.png" class="drivegoogle"></a>
+                   <p class="WebbyDevvyLink">Webby Devvy APK</p>
+                   <p class="guide">(Click on the image to download)</p>
+                 </div>
+               </div>
+
+
+
+
+
+               <p class="InfomercialText" id="InfomercialText">Infomercial</p>
+               <img src="Images/Octagonheading.png" class="InfomercialHeading" id="InfomercialHeading">
+
+                 <video controls  width="445" height="250" autoplay="" class="infomercial" poster="Images/InfomercialThumbnail.png">
+                    <source src="videos/infomercial.mp4" type="video/mp4"/>
+                  </video>
+
+
+
+              <p class="PitchingText" id="PitchingText">Product Pitch</p>
+               <img src="Images/Octagonheading.png" class="PitchingHeading" id="PitchingHeading">
+
+                 <video controls  width="445" height="250" autoplay="" class="pitching" poster="Images/PitchingThumbnail.png">
+                    <source src="videos/pitch.mp4" type="video/mp4"/>
+                  </video>
+
+              <p class="SolutionText" id="SolutionText">The &nbsp; Solution</p>
+               <img src="Images/Octagonheading.png" class="SolutionHeading" id="SolutionHeading">
+
+                 <video controls  width="445" height="250" autoplay="" class="solution" poster="Images/SolutionThumbnail.png">
+                    <source src="videos/Solution.mp4" type="video/mp4"/>
+                  </video>
+
+
+  
+
+        </div>
+
+  <div class="Footer"> 
+          <div class="FooterDivider">
+               <p class="FooterInfo"> © COPYRIGHT 2021 HAKA UNITY, ALL RIGHTS RESERVED.</p>
+           </div>
+
+         <a href="https://www.facebook.com/HAKAUNITYPH" class="FacebookLink">
+               <div class="FooterDividerTwo">
+           
+              <img src="Images/Facebooklogo.png" class="FacebookSize">
+              <p class="FacebookLinkMargin">HAKA UNITY Facebook Page</p>
+            
+              </div>
+           </a>
+
+
+        </div>
+
+	</div>
+
+</body>
+<script src="js/FunctionsTwo.js"></script>
+</html>

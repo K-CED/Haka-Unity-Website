@@ -1,0 +1,1658 @@
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+	cursor: url('images/cursor.png'), pointer;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@font-face {
+  font-family: 'HeroLegend';
+  src: url(Fonts/HeroesLegend.ttf);
+}
+
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(Fonts/LeagueSpartan-Bold.otf);
+}
+
+.Preload {
+	transition: none;
+}
+
+.Navigation {
+	height: 80px;
+	width: 1515px;
+	background-image: url("Images/Navground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin: 0 auto;
+	padding: 0 auto;
+	left: 0%;
+	right: 0%;
+	z-index: 400;
+	overflow-y: hidden;
+}
+
+.Logonavground {
+	margin-top: 5px;	 
+	width: 400px;
+	float: left;
+
+}
+
+.Navbuttons {
+	display: inline-flex;
+	float: right;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.Home {
+	margin-top: 20px;
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: white;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .5s;
+	
+}
+
+.Home:hover {
+	color: yellow;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.Staff {
+	margin-top: 20px;
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: white;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .2s;
+}
+
+.Staff:hover {
+	color: yellow;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.Products {
+	margin-top: 20px;
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: yellow;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .5s;
+}
+
+.Products:hover {
+	color: gold;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.Contact {
+	margin-top: 20px;	
+	font-family: HeroLegend;
+	text-decoration: none;
+	color: white;
+	margin-right: 40px;
+	display: inline-flex;
+	float: right;
+	transition: .5s;
+}
+
+.Contact:hover {
+	color: yellow;
+	font-size: 20px;
+	transition: .5s;
+}
+
+.video {
+	position: absolute;
+	z-index: -200;
+	margin-left: -885px;
+	margin-top: -180px;
+}
+
+/* .Toppart {
+	position: absolute;
+	z-index: -200;
+	width: 115%;
+	margin-left: -870px;
+	margin-top: -180px;
+} */
+
+#ProductContent {
+	margin-top: 500px;
+	padding-top: 50px;
+	width: 1519px;
+	height: 5000px;
+	text-align: center;
+	overflow: hidden;
+	background-image: linear-gradient(to bottom, transparent 15.3%, #010029 16%, fuchsia 55.6%, transparent 55.9%, transparent 76.5%, red 76.8%, maroon 90.8%, black);
+	position: relative;
+
+}
+
+
+
+
+div.hidden {
+	display: none;
+}
+
+.OctagonHeading {
+	width: 35%;
+	margin-top: 20px;
+	animation: OctagonHeading 4s ease forwards;
+	transition: .5s;
+	-webkit-filter: drop-shadow(0px 10px 10px black);
+        filter: drop-shadow(0px 10px 10px black);
+}
+
+.OctagonHeading:hover {
+	margin-top: 15px;
+    width: 38%;
+    transition: .5s;
+}
+
+@keyframes OctagonHeading {
+	0% {
+		transform: rotate(-20deg);
+		margin-left: -200px;
+	}
+
+	25% {
+		transform: rotate(20deg);
+		margin-left: 200px;
+	}
+
+	50% {
+		transform: rotate(-10deg);
+		margin-left: -100px;
+	}
+
+	75% {
+		transform: rotate(10deg);
+		margin-left: 100px
+	}
+
+	100% {
+		transform: rotate(0deg);
+		margin-left: 0px;
+	}
+}
+
+.ProductHeading {
+	margin-top: -100px;
+	font-family: HeroLegend;
+	font-size: 20px;
+	position: relative;
+	animation: TextHeading 4s ease forwards;
+}
+
+@keyframes TextHeading {
+	0% {
+		transform: rotate(-20deg);
+		margin-left: -200px;
+	}
+
+	25% {
+		transform: rotate(20deg);
+		margin-left: 200px;
+	}
+
+	50% {
+		transform: rotate(-10deg);
+		margin-left: -100px;
+	}
+
+	75% {
+		transform: rotate(10deg);
+		margin-left: 100px
+	}
+
+	100% {
+		transform: rotate(0deg);
+		margin-left: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+#AppLogo  {
+	position: absolute;
+	z-index: 33;
+	animation: LogoSpin 2.7s forwards;
+
+}
+
+@keyframes LogoSpin {
+
+	0% {
+		transform: rotate(-30deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.hiddenmessage {
+	background-color: red;
+	position: absolute;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	font-family: 'LeagueSpartan';
+	margin-top: 130px;
+	z-index: 34;
+	margin-left: 233px;
+}
+
+#message {
+	display: none;
+}
+
+.hiddenImage {
+	margin-top: 60px;
+	margin-left:-1022px;
+	display: none;
+}
+
+#AppDescriptionContent {
+	margin-top: 150px;
+	width: 1100px;
+	height: 300px;
+	background: rgba(204, 204, 204, 0);
+	background-image: linear-gradient(to right, white 75%,  white 10%, transparent 110%);
+	position: absolute;
+	margin-left: 1600px;
+	padding-top: 20px;
+	padding-left: 20px;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 70px;
+
+
+}
+
+.hiddentwo {
+	display: none;
+}
+
+
+
+.AppDescription {
+	font-size: 20px;
+	font-family: 'LeagueSpartan';
+	float: left;
+	margin-top: 60px;
+	margin-left: 200px;
+	margin-right: 79px;
+
+}
+
+
+
+
+.OctagonScreenshots {
+	width: 28%;
+	margin-top: 650px;
+	position: absolute;
+	margin-left: -210px;
+	-webkit-filter: drop-shadow(0px 10px 10px black);
+        filter: drop-shadow(0px 10px 10px black);
+}
+
+#OctagonScreenshots {
+	display: none;
+}
+
+
+
+
+.ScreenshotHeading {
+	margin-top: 670px;
+	font-family: HeroLegend;
+	font-size: 30px;
+	position: relative;
+	display: none;
+	position: absolute;
+	margin-left: 600px;
+}
+
+#ScreenshotHeading {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+#AppScreenshotsContent {
+	float: left;
+	width: 400px;
+	height: 700px;
+    background: rgba(204, 204, 204, 0);
+    background-image: linear-gradient(to bottom, white 45%,  white 10%, transparent 90%); 
+    box-shadow:  0px -10px 40px 6px black;
+	border-top-left-radius: 70px;
+	border-top-right-radius: 70px;
+	margin-top: 1350px;
+	margin-left: 65px;
+	position: absolute;
+}
+
+.hiddenthree {
+	display: none;
+}
+
+.FirstPhone {
+	width: 300px;
+	margin-top: -130px;
+	transition: .5s;
+}
+
+.FirstPhone:hover {
+    width: 350px;
+    margin-top: -180px;
+    transition: .5s;
+}
+
+
+
+.toolTipOne {
+	margin-left: 40px;
+	margin-top: 1300px;
+	z-index: 70;
+}
+
+
+#ScreenshotInfoOne {
+	position: absolute;
+	display: none;
+	
+}
+
+.HexagonOne {
+	width: 450px;
+}
+
+
+
+
+
+.toolTipParagraph {
+	font-family: LeagueSpartan;
+	font-size: 20px;
+	position: absolute;
+	margin-top: -280px;
+	color: black;
+	margin-left: 35px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+#AppScreenshotsContenttwo {
+	width: 400px;
+	height: 700px;    
+	background: rgba(204, 204, 204, 0);
+	background-image: linear-gradient(to bottom, white 45%,  white 10%, transparent 90%);
+	box-shadow:  0px -10px 40px 6px black;
+	border-top-left-radius: 70px;
+	border-top-right-radius: 70px;
+	margin-top: 1350px;
+	margin-left: 558px;
+	position: absolute;
+}
+
+.hiddenfour {
+	display: none;
+}
+
+.SecondPhone {
+	width: 300px;
+	margin-top: -130px;
+	transition: .5s;
+}
+
+.SecondPhone:hover {
+    width: 350px;
+    margin-top: -180px;
+    transition: .5s;
+}
+
+
+.toolTipTwo {
+	margin-left: 533px;
+	margin-top: 1300px;
+	z-index: 70;
+}
+
+
+#ScreenshotInfoTwo {
+	position: absolute;
+	display: none;
+	
+}
+
+.HexagonTwo {
+	width: 450px;
+}
+
+
+.toolTipParagraphTwo {
+	font-family: LeagueSpartan;
+	font-size: 20px;
+	position: absolute;
+	margin-top: -280px;
+	color: black;
+	margin-left: 45px;
+	
+}
+
+
+
+
+
+
+
+
+#AppScreenshotsContentthree {
+	width: 400px;
+	height: 700px;
+    background: rgba(204, 204, 204, 0);
+	background-image: linear-gradient(to bottom, white 45%,  white 10%, transparent 90%);
+	box-shadow:  0px -10px 40px 6px black;
+	border-top-left-radius: 70px;
+	border-top-right-radius: 70px;
+	margin-top: 1350px;
+	margin-left: 1055px;
+	position: absolute;
+}
+
+.hiddenfive{
+	display: none;
+}
+
+.ThirdPhone {
+	width: 300px;
+	margin-top: -130px;
+	transition: .5s;
+}
+
+.ThirdPhone:hover {
+    width: 350px;
+    margin-top: -180px;
+    transition: .5s;
+}
+
+.toolTipThree {
+	margin-left: 1030px;
+	margin-top: 1300px;
+	z-index: 70;
+}
+
+
+#ScreenshotInfoThree {
+	position: absolute;
+	display: none;
+	
+}
+
+.HexagonThree {
+	width: 450px;
+}
+
+
+
+.toolTipParagraphThree {
+	font-family: LeagueSpartan;
+	font-size: 20px;
+	position: absolute;
+	margin-top: -280px;
+	color: black;
+	margin-left: 45px;
+	
+}
+
+
+
+
+
+#AppScreenshotsContentfour {
+	width: 400px;
+	height: 700px;
+    background: rgba(204, 204, 204, 0);
+	background-image: linear-gradient(to bottom, white 45%,  white 10%, transparent 90%);
+	box-shadow:  0px -10px 40px 6px black;
+	border-top-left-radius: 70px;
+	border-top-right-radius: 70px;
+	margin-top: 2050px;
+	margin-left: 65px;
+	position: absolute;
+}
+
+.hiddensix{
+    display: none;
+}
+
+.FourthPhone {
+	width: 300px;
+	margin-top: -130px;
+	transition: .5s;
+}
+
+.FourthPhone:hover {
+    width: 350px;
+    margin-top: -180px;
+    transition: .5s;
+}
+
+.toolTipFour {
+	margin-left: 40px;
+	margin-top: 2200px;
+	z-index: 70;
+}
+
+
+#ScreenshotInfoFour {
+	position: absolute;
+	display: none;
+	
+}
+
+.HexagonFour {
+	width: 450px;
+}
+
+
+
+.toolTipParagraphFour {
+	font-family: LeagueSpartan;
+	font-size: 20px;
+	position: absolute;
+	margin-top: -280px;
+	color: black;
+	margin-left: 45px;
+	
+}
+
+
+
+
+
+
+
+
+
+#AppScreenshotsContentfive {
+	width: 400px;
+	height: 700px;
+    background: rgba(204, 204, 204, 0);
+	background-image: linear-gradient(to bottom, white 45%,  white 10%, transparent 90%);
+	box-shadow:  0px -10px 40px 6px black;
+	border-top-left-radius: 70px;
+	border-top-right-radius: 70px;
+	margin-top: 2050px;
+	margin-left: 558px;
+	position: absolute;
+}
+
+.hiddenseven{
+    display: none;
+}
+
+.FifthPhone {
+	width: 300px;
+	margin-top: -130px;
+	transition: .5s;
+}
+
+.FifthPhone:hover {
+    width: 350px;
+    margin-top: -180px;
+    transition: .5s;
+}
+
+.toolTipFive {
+	margin-left: 533px;
+	margin-top: 2200px;
+	z-index: 70;
+}
+
+
+#ScreenshotInfoFive {
+	position: absolute;
+	display: none;
+	
+}
+
+.HexagonFive {
+	width: 450px;
+}
+
+
+
+.toolTipParagraphFive {
+	font-family: LeagueSpartan;
+	font-size: 20px;
+	position: absolute;
+	margin-top: -280px;
+	color: black;
+	margin-left: 25px;
+	
+}
+
+
+
+
+
+
+#AppScreenshotsContentsix {
+	width: 400px;
+	height: 700px;
+    background: rgba(204, 204, 204, 0);
+	background-image: linear-gradient(to bottom, white 45%,  white 10%, transparent 90%);
+	box-shadow:  0px -10px 40px 6px black;
+	border-top-left-radius: 70px;
+	border-top-right-radius: 70px;
+	margin-top: 2050px;
+	margin-left: 1055px;
+	position: absolute;
+}
+
+.hiddeneigth{
+    display: none;
+}
+
+.SixthPhone {
+	width: 300px;
+	margin-top: -130px;
+	transition: .5s;
+}
+
+.SixthPhone:hover {
+    width: 350px;
+    margin-top: -180px;
+    transition: .5s;
+}
+
+.toolTipSix {
+	margin-left: 1030px;
+	margin-top: 2200px;
+	z-index: 70;
+}
+
+
+#ScreenshotInfoSix {
+	position: absolute;
+	display: none;
+	
+}
+
+.HexagonSix {
+	width: 450px;
+}
+
+
+
+.toolTipParagraphSix {
+	font-family: LeagueSpartan;
+	font-size: 20px;
+	position: absolute;
+	margin-top: -240px;
+	color: black;
+	margin-left: 25px;
+	
+}
+
+
+
+
+
+
+
+
+
+.border {
+	border-width: 20px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: black;
+	position: absolute;
+	width: 1480px;
+    height: 1020px;
+    margin-top: 2625px;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+
+
+
+.ContainerSpecs {
+	background-image: url('Images/Specbackground.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	width: 1520px;
+    height: 1800px;
+    margin-top: 2520px;
+    z-index: -100;
+}
+
+
+
+.OctagonSpecs {
+	width: 530px;
+	height: 100px;
+	margin-top: 2680px;
+	position: absolute;
+	margin-left: -270px;
+	-webkit-filter: drop-shadow(0px 10px 10px black);
+        filter: drop-shadow(0px 10px 10px black);
+}
+
+#OctagonSpecs {
+ display: none;
+}
+
+
+
+
+.SpecsHeading {
+	margin-top: 2692px;
+	font-family: HeroLegend;
+	font-size: 30px;
+	position: relative;
+	position: absolute;
+	margin-left: 540px;
+}
+
+#SpecsHeading {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+.SpecsOne {
+	width: 1200px;
+	height: 150px;
+	background-image: linear-gradient(to right, white 25%,  white 30%, transparent 110%);
+	position: absolute;
+	margin-top: 2850px;
+	margin-left: 1520px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	overflow: hidden;
+	display: none;
+	z-index: 104;
+}
+
+.SpecsDescOne {
+	margin-top: 40px;
+	margin-left: 40px;
+	float: left;
+	font-family: LeagueSpartan;
+	font-size: 25px;
+	position: absolute;
+	z-index: 110;
+}
+
+.SpecsDescOne span {
+	font-family: HeroLegend;
+}
+
+.OSDefinition {
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 40px;
+	margin-right: 40px;
+	float: left;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+	z-index: 110;
+}
+
+.OSDefinition span {
+	font-family: HeroLegend;
+}
+
+.GalaxyS10 {
+	width: 200px;
+	position: absolute;
+	z-index: 200;
+	margin-left: 1200px;
+	margin-top: -50px;
+}
+
+.P30 {
+	width: 280px;
+	position: absolute;
+	z-index: 199;
+	margin-left: 1050px;
+	margin-top: 1300px;
+}
+
+.Oneplus {
+	width: 280px;
+	position: absolute;
+	z-index: 206;
+	margin-left: 1600px;
+	margin-top: 900px;
+}
+
+.Pixel3 {
+	width: 280px;
+	position: absolute;
+	z-index: 198;
+	margin-left: 1150px;
+	margin-top: 700px;
+
+}
+
+.Xperia {
+	width: 200px;
+	position: absolute;
+	z-index: 200;
+	margin-left: 850px;
+	margin-top: 900px;
+}
+
+.S7edge {
+	width: 280px;
+	position: absolute;
+	z-index: 195;
+	margin-left: 1650px;
+	margin-top: -200px;
+}
+
+.Vivo {
+	width: 280px;
+	position: absolute;
+	z-index: 180;
+	margin-left: 1760px;
+	margin-top: 900px;
+}
+
+.Chrome {
+	width: 100px;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 480px;
+	z-index: 210;
+}
+
+.IconOne {
+	font-size: 10px;
+	background-color: black;
+	color: white;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	font-family: LeagueSpartan;
+	border-radius: 30px;
+	position: absolute;
+	margin-left: 105px;
+	margin-top: 460px;
+	z-index: 240;
+}
+
+
+
+.Youtube {
+	width: 100px;
+	position: absolute;
+	margin-left: 250px;
+	margin-top: 500px;
+	z-index: 210;
+}
+
+.IconTwo {
+	font-size: 10px;
+	background-color: black;
+	color: white;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	font-family: LeagueSpartan;
+	border-radius: 30px;
+	position: absolute;
+	margin-left: 273px;
+	margin-top: 460px;
+	z-index: 240;
+}
+
+.Discord {
+	width: 100px;
+	position: absolute;
+	margin-left: 400px;
+	margin-top: 485px;
+	z-index: 210;
+}
+
+.IconThree {
+	font-size: 10px;
+	background-color: black;
+	color: white;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	font-family: LeagueSpartan;
+	border-radius: 30px;
+	position: absolute;
+	margin-left: 425px;
+	margin-top: 460px;
+	z-index: 240;
+}
+
+
+.Militia {
+	width: 90px;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: 490px;
+	z-index: 210;
+	border-radius: 30px;
+}
+
+
+.IconFour {
+	font-size: 10px;
+	background-color: black;
+	color: white;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	font-family: LeagueSpartan;
+	border-radius: 30px;
+	position: absolute;
+	margin-left: 561px;
+	margin-top: 460px;
+	z-index: 240;
+}
+
+.Reaction {
+	width: 90px;
+	position: absolute;
+	margin-left: 700px;
+	margin-top: 490px;
+	z-index: 210;
+	border-radius: 30px;
+}
+
+.IconFive {
+	font-size: 10px;
+	background-color: black;
+	color: white;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	font-family: LeagueSpartan;
+	border-radius: 30px;
+	position: absolute;
+	margin-left: 701px;
+	margin-top: 460px;
+	z-index: 240;
+}
+
+
+.Androidies {
+	margin-top: -550px;
+	margin-left: 950px;
+	transform: rotate(-30deg);
+	width: 1200px;
+	opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SpecsTwo {
+	width: 1200px;
+	height: 150px;
+	background-image: linear-gradient(to left, white 25%,  white 30%, transparent 110%);
+	position: absolute;
+	margin-top: 3050px;
+	margin-left:-1200px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+	z-index: 103;
+}
+
+.SpecsDescTwo {
+	margin-top: 40px;
+	margin-right: 40px;
+	float: right;
+	font-family: LeagueSpartan;
+	font-size: 25px;
+}
+
+.SpecsDescTwo span {
+	font-family: HeroLegend;
+}
+
+.RAMDefinition {
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 730px;
+	margin-right: 30px;
+	float: right;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+	z-index: 110;
+}
+
+.RAMDefinition span {
+	font-family: HeroLegend;
+}
+
+.ramchip {
+	position: absolute;
+	z-index: 110;
+	width: 150px;
+	margin-top: 10px;
+	margin-left: -590px;
+	border-radius: 20px;
+}
+
+.Ramies {
+	margin-top: -550px;
+	margin-left: -1130px;
+	transform: rotate(30deg);
+	opacity: 0.2;
+	width: 1200px;
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SpecsThree {
+	width: 1200px;
+	height: 150px;
+	background-image: linear-gradient(to right, white 25%,  white 30%, transparent 110%);
+	position: absolute;
+	margin-top: 3250px;
+	margin-left: 1520px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	overflow: hidden;
+	z-index: 102;
+}
+
+.SpecsDescThree {
+	margin-top: 40px;
+	margin-left: 40px;
+	float: left;
+	font-family: LeagueSpartan;
+	font-size: 25px;
+}
+
+.SpecsDescThree span {
+	font-family: HeroLegend;
+}
+
+.CHIPDefinition {
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 40px;
+	margin-right: 40px;
+	float: left;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+	z-index: 110;
+}
+
+.CHIPDefinition span {
+	font-family: HeroLegend;
+}
+
+.Chipset {
+	width: 150px;
+	position: absolute;
+	z-index: 200;
+	margin-left: 400px;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+.CPU {
+	margin-top: -550px;
+	margin-left: -100px;
+	transform: rotate(-30deg);
+	width: 1200px;
+	opacity: 0.3;
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SpecsFour {
+	width: 1200px;
+	height: 150px;
+	background-image: linear-gradient(to left, white 25%,  white 30%, transparent 110%);
+	position: absolute;
+	margin-top: 3450px;
+	margin-left:-1200px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+	z-index: 100;
+}
+
+.SpecsDescFour {
+	margin-top: 40px;
+	margin-right: 40px;
+	float: right;
+	font-family: LeagueSpartan;
+	font-size: 25px;
+}
+
+.SpecsDescFour span {
+	font-family: HeroLegend;
+}
+
+.ROMDefinition {
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 730px;
+	margin-right: 30px;
+	float: right;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+	z-index: 110;
+}
+
+.ROMDefinition span{
+	font-family: LeagueSpartan;
+}
+
+.ROM {
+	position: absolute;
+	z-index: 110;
+	width: 150px;
+	margin-top: 10px;
+	margin-left: -590px;
+	border-radius: 20px;
+}
+.Storage {
+	margin-top: -550px;
+	margin-left: -1100px;
+	transform: rotate(30deg);
+	width: 1200px;
+	opacity: 0.2;
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.VideoHeading {
+	width: 560px;
+	height: 100px;
+	margin-top: 3740px;
+	position: absolute;
+	margin-left: -605px;
+	z-index: 30;
+	-webkit-filter: drop-shadow(0px 10px 10px black);
+        filter: drop-shadow(0px 10px 10px black);
+        display: none;
+}
+
+.VideoText {
+	margin-top: 3752px;
+	font-family: HeroLegend;
+	font-size: 30px;
+	position: relative;
+	position: absolute;
+	margin-left: 200px;
+	z-index: 31;
+	display: none;
+}
+
+.appteaser {
+	position: absolute;
+	z-index: 300;
+	margin-top: 3900px;
+	margin-left: -720px;
+	z-index: 31;
+	box-shadow:  0px 10px 40px 6px black;
+	border-radius: 20px;
+	display: none;
+}
+
+
+
+
+
+
+
+.instructions {
+	position: absolute;
+	width: 500px;
+	height: 610px;
+	background-image: url('Images/Topbackground.png');
+	background-attachment: fixed;
+	background-size: 1850px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 3745px;
+	margin-left: 930px;
+	box-shadow:  0px 10px 40px 6px black;
+	z-index: 31;
+	overflow: hidden;
+	display: none;
+}
+
+.tutorial {
+	margin-top: 50px;
+	font-family: LeagueSpartan;
+	font-size: 40px;
+	color: white;
+}
+
+.drivegooglecontainer {
+	margin-top: 30px;
+	background-color: black;
+	background-color: rgba(0,0,0,0.95);
+	padding-bottom: 120px;
+	padding-top: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.Googledrive {
+	color: white;
+	font-size: 20px;
+	font-family: LeagueSpartan;
+}
+
+.drivegoogle {
+	margin-top: 10px;
+	width: 250px;
+	margin-bottom: 20px;
+	transition: .5s;
+}
+
+.drivegoogle:hover {
+	margin-top: -10px;
+	width: 300px;
+	transition: .5s;
+
+}
+
+.WebbyDevvyLink {
+	font-family: HeroLegend;
+	color: white;
+	font-size: 30px;
+}
+
+.guide {
+	margin-top: 20px;
+	font-family: LeagueSpartan;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.InfomercialHeading {
+	width: 360px;
+	height: 100px;
+	margin-top: 4415px;
+	position: absolute;
+	margin-left: -680px;
+	z-index: 28;
+	-webkit-filter: drop-shadow(0px 10px 10px black);
+        filter: drop-shadow(0px 10px 10px black);
+        display: none;
+   
+}
+
+.InfomercialText {
+	margin-top: 4430px;
+	font-family: HeroLegend;
+	font-size: 30px;
+	position: absolute;
+	position: absolute;
+	margin-left: 115px;
+	z-index: 29;
+	display: none;
+
+}
+
+
+
+.infomercial {
+	position: absolute;
+	margin-top: 4540px;
+	margin-left: -720px;
+	z-index: 29;
+	box-shadow:  0px 10px 40px 6px black;
+	border-radius: 20px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+.PitchingHeading {
+	width: 420px;
+	height: 100px;
+	margin-top: 4415px;
+	position: absolute;
+	margin-left: -210px;
+	z-index: 28;
+	-webkit-filter: drop-shadow(0px 10px 10px black);
+        filter: drop-shadow(0px 10px 10px black);
+        display: none;
+   
+}
+
+.PitchingText {
+	margin-top: 4430px;
+	font-family: HeroLegend;
+	font-size: 30px;
+	position: absolute;
+	position: absolute;
+	margin-left: 590px;
+	z-index: 29;
+	display: none;
+
+}
+
+
+
+.pitching {
+	position: absolute;
+	margin-top: 4540px;
+	margin-left: -223px;
+	z-index: 29;
+	box-shadow:  0px 10px 40px 6px black;
+	border-radius: 20px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+.SolutionHeading {
+	width: 420px;
+	height: 100px;
+	margin-top: 4415px;
+	position: absolute;
+	margin-left: 285px;
+	z-index: 28;
+	-webkit-filter: drop-shadow(0px 10px 10px black);
+        filter: drop-shadow(0px 10px 10px black);
+        display: none;
+}
+
+.SolutionText {
+	margin-top: 4430px;
+	font-family: HeroLegend;
+	font-size: 30px;
+	position: absolute;
+	position: absolute;
+	margin-left: 1090px;
+	z-index: 29;
+	display: none;
+
+
+}
+
+
+
+.solution {
+	position: absolute;
+	margin-top: 4540px;
+	margin-left: 275px;
+	z-index: 29;
+	box-shadow:  0px 10px 40px 6px black;
+	border-radius: 20px;
+	display: none;
+	
+}
+
+
+
+
+
+
+
+
+.Footer {
+	height: 140px;
+	width: 1515px;
+	background-image: url("Images/Navground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin: 0 auto;
+	padding: 0 auto;
+	left: 0%;
+	right: 0%;
+	z-index: 600;
+	overflow-y: hidden;
+	position: relative;
+}
+
+.FooterDivider {
+	background-color: black;
+	width: 850px;
+	height: 100%;
+	position: absolute;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.FooterInfo {
+	margin-top: 58px;
+	margin-left: 55px;
+	font-family: 'LeagueSpartan';
+	color: white;
+	font-size: 25px;
+	position: relative;
+}
+
+.FooterDividerTwo {
+	display: inline-flex;
+	position: relative;
+	margin-left: 850px;
+	margin-top: 0px;
+	width: 665px;
+	height: 140px;
+
+}
+
+.FacebookSize {
+	width: 220px;
+	margin-left: 0px;
+}
+
+.FacebookLink {
+	text-decoration: none;
+
+}
+
+.FacebookLinkMargin {
+	font-family: 'LeagueSpartan';
+	color: white;
+	font-size: 25px;
+	margin-top: 60px;
+	margin-left: -70px;
+	transition: .5s
+}
+
+.FacebookLinkMargin:hover {
+	font-size: 30px;
+	transition: .5s;
+	color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
