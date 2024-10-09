@@ -13,12 +13,14 @@ body {
 
 @font-face {
   font-family: 'HeroLegend';
-  src: url(Fonts/HeroesLegend.ttf);
+  src: url(Fonts/HeroesLegend.ttf) format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'LeagueSpartan';
-  src: url(Fonts/LeagueSpartan-Bold.otf);
+  src: url(Fonts/LeagueSpartan-Bold.otf)  format('opentype');
+  font-display: swap;
 }
 
 .Preload {
@@ -34,6 +36,8 @@ body {
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	align-items: center;
+	justify-items: center;
 	margin: 0 auto;
 	padding: 0 auto;
 	left: 0%;

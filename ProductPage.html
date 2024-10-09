@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Products</title>
+  <link rel="preload" href="Fonts/HeroesLegend.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="preload" href="Fonts/LeagueSpartan-Bold.otf" as="font" type="font/otf" crossorigin>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="ProductPageDesign.css">
 </head>
@@ -19,7 +21,7 @@
 
 	<div class="WholePage">
 		<div class="Navigation">
-			<a href="HomePage.html"><img src="Images/Logonavground.png" class="Logonavground" onmouseover="play()"></a>
+			<a href="HomePage.html"><img decoding="async" style="image-rendering: auto;" src="Images/Logonavground.png" class="Logonavground" onmouseover="play()"></a>
 			<a href="Contacts.html" class="Contact" onmouseover="play()"><p>CONTACT US</p></a>
 			<a href="ProductPage.html" class="Products" onmouseover="play()"><p>PRODUCTS</p></a>
 			<a href="StaffPage.html" class="Staff" onmouseover="play()"><p>THE STAFF</p></a>
@@ -31,10 +33,10 @@
 		<div class="hidden" id="ProductContent">
 
 
-		      <img src="Images/Octagonheading.png" class="OctagonHeading" onmouseover="play()">	
+		      <img decoding="async" src="Images/Octagonheading.png" class="OctagonHeading" onmouseover="play()" style="image-rendering: auto;">	
                 <p class="ProductHeading">Webby Devvy</p>
 
-          <img src="Images/Webbydevvylogo.png" class="hiddenImage" id="AppLogo" onmouseover="EnlargeLogo(); play()" onmouseout="NormalLogo()">
+          <img decoding="async" src="Images/Webbydevvylogo.png" class="hiddenImage" id="AppLogo" onmouseover="EnlargeLogo(); play()" onmouseout="NormalLogo()" style="image-rendering: auto;">
                 <p class="hiddenmessage" id="message" onmouseover="EnlargeLogo()" onmouseout="NormalLogo()">!APP LOGO!</p>
 
               <div class="hiddentwo" id="AppDescriptionContent">
@@ -50,16 +52,16 @@
               <source src="videos/hexadevvy.mp4" type="video/mp4"/>
             </video>
 
-           <img src="Images/Octagonheading.png" class="OctagonScreenshots" id="OctagonScreenshots">
+           <img decoding="async" src="Images/Octagonheading.png" class="OctagonScreenshots" id="OctagonScreenshots" style="image-rendering: auto;">
                   <p class="ScreenshotHeading" id="ScreenshotHeading">App Contents</p>
 
 
                   <div class="hiddenthree" id="AppScreenshotsContent">
-                    	<img src="Images/Homepage.png" class="FirstPhone" onmouseover="FirstFeatureIn(); play()" onmouseout="FirstFeatureOut()">
+                    	<img decoding="async" src="Images/Homepage.png" class="FirstPhone" onmouseover="FirstFeatureIn(); play()" onmouseout="FirstFeatureOut()" style="image-rendering: auto;">
                   </div>
               
                   <div class="toolTipOne" id="ScreenshotInfoOne" onmouseover="RetainHexagonOne()" onmouseout="RetainHexagonOneAgain()">              
-                    	<img src="Images/Phonetip.png" class="HexagonOne" >
+                    	<img decoding="async" src="Images/Phonetip.png" class="HexagonOne" style="image-rendering: auto;" >
                       <p class="toolTipParagraph" onmouseover="clicksound()">HOMEPAGE OF <br> WEBBY DEVVY WITH AN <br> OVERVIEW ABOUT WEB DESIGN <br> AND WEB DEVELOPMENT WITH SOME <br> INFORMATION ON HOW YOU CAN <br> CHOOSE A COURSE FOR <br> YOUR  FUTURE.</p>
                   </div>
 
@@ -68,11 +70,11 @@
 
 
                   <div class="hiddenfour" id="AppScreenshotsContenttwo">
-                    	<img src="Images/HTMLPage.png" class="SecondPhone" onmouseover="SecondFeatureIn(); play()" onmouseout="SecondFeatureOut()">
+                    	<img decoding="async" src="Images/HTMLPage.png" class="SecondPhone" onmouseover="SecondFeatureIn(); play()" onmouseout="SecondFeatureOut()" style="image-rendering: auto;">
                   </div>
 
-                  <div class="toolTipTwo" id="ScreenshotInfoTwo" onmouseover="RetainHexagonTwo()" onmouseout="RetainHexagonTwoAgain()">              
-                      <img src="Images/Phonetip.png" class="HexagonTwo" >
+                  <div class="toolTipTwo" id="ScreenshotInfoTwo" onmouseover="RetainHexagonTwo()" onmouseout="RetainHexagonTwoAgain()" style="image-rendering: auto;">              
+                      <img decoding="async" src="Images/Phonetip.png" class="HexagonTwo" >
                       <p class="toolTipParagraphTwo" onmouseover="clicksound()">THIS IS THE HTML CATEGORY <br> WHERE YOU CAN LEARN ABOUT <br>  THE BASIC SYNTAXES AND ITS <br> PURPOSE FOR WEB DEVELOPMENT. <br> THIS PAGE IS SCROLLABLE AND <br> THE CONTENTS ARE ACCESSIBLE <br> OFFLINE.</p>
                   </div>
 
@@ -82,11 +84,11 @@
 
 
                   <div class="hiddenfive" id="AppScreenshotsContentthree" >
-                    	<img src="Images/HTMLContents.png" class="ThirdPhone" onmouseover="ThirdFeatureIn(); play()" onmouseout="ThirdFeatureOut()">
+                    	<img decoding="async" style="image-rendering: auto;" src="Images/HTMLContents.png" class="ThirdPhone" onmouseover="ThirdFeatureIn(); play()" onmouseout="ThirdFeatureOut()">
                   </div>
 
                   <div class="toolTipThree" id="ScreenshotInfoThree" onmouseover="RetainHexagonThree()" onmouseout="RetainHexagonThreeAgain()">              
-                      <img src="Images/Phonetip.png" class="HexagonThree" >
+                      <img decoding="async" style="image-rendering: auto;" src="Images/Phonetip.png" class="HexagonThree" >
                       <p class="toolTipParagraphThree" onmouseover="clicksound()">PICKING AN ELEMENT TAKES <br> YOU HERE. THIS PROVIDES <br> THE DEFINITION OF A TERM AS <br> WELL AS A VISUAL OUTPUT IN  <br> ORDER UNDERSTAND THE SYNTAX <br> BETTER. A SHORT QUIZ IS <br> AVAILABLE AS WELL.<br> </p>
                   </div>
 
@@ -94,11 +96,11 @@
 
 
                   <div class="hiddensix" id="AppScreenshotsContentfour" >
-                      <img src="Images/CSSPage.png" class="FourthPhone" onmouseover="FourthFeatureIn(); play()" onmouseout="FourthFeatureOut()">
+                      <img decoding="async" style="image-rendering: auto;" src="Images/CSSPage.png" class="FourthPhone" onmouseover="FourthFeatureIn(); play()" onmouseout="FourthFeatureOut()">
                   </div>
 
                   <div class="toolTipFour" id="ScreenshotInfoFour" onmouseover="RetainHexagonFour()" onmouseout="RetainHexagonFourAgain()">       
-                      <img src="Images/Phonetip.png" class="HexagonFour" >
+                      <img decoding="async" style="image-rendering: auto;" src="Images/Phonetip.png" class="HexagonFour" >
                       <p class="toolTipParagraphFour" onmouseover="clicksound()">THIS IS THE CSS CATEGORY <br> WHERE YOU CAN LEARN ABOUT <br>  THE BASIC SYNTAXES AND ITS <br> PURPOSE FOR WEB DEVELOPMENT <br> WHILE INCORPORATING IT WITH  <br> HTML. THIS PAGE IS SCROLLABLE  <br>AND THE CONTENTS ARE  <br>ACCESSIBLE OFFLINE.</p>
                   </div>
               
@@ -106,22 +108,22 @@
 
 
                   <div class="hiddenseven" id="AppScreenshotsContentfive" >
-                      <img src="Images/CSSContent.png" class="FifthPhone" onmouseover="FifthFeatureIn(); play()" onmouseout="FifthFeatureOut()">
+                      <img decoding="async" style="image-rendering: auto;" src="Images/CSSContent.png" class="FifthPhone" onmouseover="FifthFeatureIn(); play()" onmouseout="FifthFeatureOut()">
                   </div>
 
                   <div class="toolTipFive" id="ScreenshotInfoFive" onmouseover="RetainHexagonFive()" onmouseout="RetainHexagonFiveAgain()">       
-                      <img src="Images/Phonetip.png" class="HexagonFive" >
+                      <img decoding="async" style="image-rendering: auto;" src="Images/Phonetip.png" class="HexagonFive" >
                       <p class="toolTipParagraphFive" onmouseover="clicksound()">LEARN THE SYNTAX OF CSS <br> WHERE YOU CAN LEARN ABOUT <br> MANIPULATING DESIGN ATTRIBUTES <br> TO MAKE YOUR WEBSITE LOOK GOOD.<br> IT ALSO PROVIDES A CLEAR VISUAL <br> OUTPUT IN ORDER FOR YOU TO <br> INCORPORATE THESE TO HTML <br>WITHOUT EASE.</p>
                   </div>
 
 
 
                   <div class="hiddeneigth" id="AppScreenshotsContentsix" >
-                      <img src="Images/SettingsPage.png" class="SixthPhone" onmouseover="SixthFeatureIn(); play()" onmouseout="SixthFeatureOut()">
+                      <img decoding="async" style="image-rendering: auto;" src="Images/SettingsPage.png" class="SixthPhone" onmouseover="SixthFeatureIn(); play()" onmouseout="SixthFeatureOut()">
                   </div>
 
                   <div class="toolTipSix" id="ScreenshotInfoSix" onmouseover="RetainHexagonSix()" onmouseout="RetainHexagonSixAgain()">       
-                      <img src="Images/Phonetip.png" class="HexagonSix" >
+                      <img decoding="async" style="image-rendering: auto;" src="Images/Phonetip.png" class="HexagonSix" >
                       <p class="toolTipParagraphSix" onmouseover="clicksound()"> CUSTOMIZE YOUR EXPERIENCE  <br> BY TOGGLING THE THEME FROM LIGHT <br> TO DARK OR DARK TO LIGHT. MORE  <br> OPTIONS ARE ALSO AVAILABLE.</p>
                   </div>
 
@@ -133,37 +135,37 @@
          <div class="ContainerSpecs">
            
          </div>
-          <img src="Images/Octagonheading.png" class="OctagonSpecs" id="OctagonSpecs">
+          <img decoding="async" style="image-rendering: auto;" src="Images/Octagonheading.png" class="OctagonSpecs" id="OctagonSpecs">
                   <p class="SpecsHeading" id="SpecsHeading">App Specifications</p>
 
                   <div class="SpecsOne" onmouseenter="SpecInfoOne(); play()" onmouseleave="RemoveSpecInfoOne()" onclick="EnlargeOS(); clicksound()" ondblclick="ResetOS()">
                     <p class="SpecsDescOne"><span>OPERATING SYSTEM:</span> &nbsp &nbsp &nbsp Android 4.1 and Up</p>
                     <p class="OSDefinition"> <span>WHAT IS AN OPERATING SYSTEM? </span> <br> <br> An Operating System (OS) is responsible for running applications, specifically for mobile devices. An example of an operating system is Android which is an open source software, meaning that the user can customize the architecture and the flow of the system. When we say customizing, this can be done by installing a custom firmware for your phone. An Operating System is a very important component inside a device. Without this, your smartphone will not function the way it should be. </p>
-                    <img src="Images/S10.png" class="GalaxyS10">
-                    <img src="Images/P30.png" class="P30">
-                    <img src="Images/Oneplus.png" class="Oneplus">
-                    <img src="Images/Pixel3.png" class="Pixel3">
-                    <img src="Images/Xperia.png" class="Xperia">
-                    <img src="Images/Samsung.png" class="S7edge">
-                    <img src="Images/Vivo.png" class="Vivo">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/S10.png" class="GalaxyS10">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/P30.png" class="P30">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Oneplus.png" class="Oneplus">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Pixel3.png" class="Pixel3">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Xperia.png" class="Xperia">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Samsung.png" class="S7edge">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Vivo.png" class="Vivo">
 
-                    <img src="Images/Chrome.png" class="Chrome" onmouseover="showChrometext(); play()" onmouseout="hideChrometext()">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Chrome.png" class="Chrome" onmouseover="showChrometext(); play()" onmouseout="hideChrometext()">
                     <p class="IconOne">Google Chrome</p>
 
-                    <img src="Images/Youtube.png" class="Youtube"  onmouseover="showYTtext(); play()" onmouseout="hideYTtext()">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Youtube.png" class="Youtube"  onmouseover="showYTtext(); play()" onmouseout="hideYTtext()">
                     <p class="IconTwo">YouTube</p>
 
-                    <img src="Images/Discord.png" class="Discord"  onmouseover="showDiscordtext(); play()" onmouseout="hideDiscordtext()">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Discord.png" class="Discord"  onmouseover="showDiscordtext(); play()" onmouseout="hideDiscordtext()">
                     <p class="IconThree">Discord</p>
 
-                    <img src="Images/Militia.png" class="Militia"  onmouseover="showMMtext(); play()" onmouseout="hideMMtext()">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Militia.png" class="Militia"  onmouseover="showMMtext(); play()" onmouseout="hideMMtext()">
                     <p class="IconFour">Mini Militia</p>
 
-                    <img src="Images/Reaction.png" class="Reaction" onmouseover="showReacttext(); play()" onmouseout="hideReacttext()">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Reaction.png" class="Reaction" onmouseover="showReacttext(); play()" onmouseout="hideReacttext()">
                     <p class="IconFive">Chain Reaction</p>
 
 
-                    <img src="Images/Androidies.png" class="Androidies">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Androidies.png" class="Androidies">
 
 
                   </div>
@@ -179,8 +181,8 @@
                   <div class="SpecsTwo" onmouseenter="SpecInfoTwo(); play()" onmouseleave="RemoveSpecInfoTwo()" onclick="EnlargeRAM(); clicksound()" ondblclick="ResetRAM()">
                     <p class="SpecsDescTwo"><span>RAM:</span> &nbsp &nbsp &nbsp 500MB and Up</p>
                     <p class="RAMDefinition"> <span>WHAT IS A RAM? </span> <br> <br> A Random Access Memory (RAM) is where an application or software resides while it is running, along with the data it is using. Both the OS and application software use RAM. Devices with more RAM can run more complex software and/or more applications at one time. Moving data into and out of RAM takes time. If data needs to be moved out of RAM to make room for other data, this can bring everything to a halt for a moment.</p>
-                    <img src="Images/Ram.jpg" class="ramchip">
-                    <img src="Images/Ramies.png" class="Ramies">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Ram.jpg" class="ramchip">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Ramies.png" class="Ramies">
                   </div>
 
 
@@ -197,8 +199,8 @@
                     <p class="SpecsDescThree"><span>SoC / CHIPSET:</span> &nbsp &nbsp &nbsp TI OMAP 4460 or Greater.</p>
                     
                     <p class="CHIPDefinition"> <span>WHAT IS A CHIPSET? </span> <br> <br> A chipset is commonly known as a "Processor". This is responsible for everything in your smartphone such as booting up, running apps, executing commands, utilization of biometrics and many more. There are many types of processors for mobile phones. Examples are: Kirin, Mediatek, Exynos, Snapdragon, and many more. High-end chipsets maintain the device from overheating because it surpasses the high-processing power of applications.  </p>
-                    <img src="Images/Chipset.jpg" class="Chipset">
-                    <img src="Images/CPU.png" class="CPU">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/Chipset.jpg" class="Chipset">
+                    <img decoding="async" style="image-rendering: auto;" src="Images/CPU.png" class="CPU">
                   </div>
 
 
@@ -214,8 +216,8 @@
                         <p class="ROMDefinition"> <span>WHAT IS A ROM? </span> <br> <br> A ROM stores files from your device. Think of it as a container that stores data virtually. Each device has different storage sizes. It can be 8GB, 16GB, 64GB, 512GB, and even 1TB of storage. Shutting down the device does not format or delete your saved files. Both ROMS can be external or internal. Internal storage built within the phone itself. You can not expand the size of this but you can get an external storage such as an "SD Card" so you can expand your phone's storage and eventually insert additional files as you wish. <br> <br> <br>
 
                         <span> Pro Tip: If you want to know more about the specs of your device, you can download "CPU-Z" from the Google Play Store for free. This app states the full specs of your phone not just the storage, cpu, gpu, and ram. </span></p>
-                        <img src="Images/ROM.jpg" class="ROM">
-                        <img src="Images/Storage.png" class="Storage">
+                        <img decoding="async" style="image-rendering: auto;" src="Images/ROM.jpg" class="ROM">
+                        <img decoding="async" style="image-rendering: auto;" src="Images/Storage.png" class="Storage">
                   </div>
 
 
@@ -224,11 +226,14 @@
 
 
                <p class="VideoText" id="VideoText">Application Trailer</p>
-               <img src="Images/Octagonheading.png" class="VideoHeading" id="VideoHeading">
+               <img decoding="async" style="image-rendering: auto;" src="Images/Octagonheading.png" class="VideoHeading" id="VideoHeading">
 
-                  <video controls  width="817" height="460" autoplay="" class="appteaser" poster="Images/TeaserThumbnail.png">
-                    <source src="videos/AppTeaser.mp4" type="video/mp4"/>
-                  </video>
+                  <!-- <video controls  width="817" height="460" autoplay="" class="appteaser" poster="Images/TeaserThumbnail.png"> -->
+                    <!-- <source src="videos/AppTeaser.mp4" type="video/mp4"/> -->
+                  <div>
+                    <iframe class="appteaser" width="817" height="460" src="https://www.youtube.com/embed/5hxPNJIFZTk?si=sngsJDMIxuVgRRIG&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <!-- </video> -->
 
                <div class="instructions">
                  <p class="tutorial"> DOWNLOAD HERE:</p>
@@ -245,28 +250,39 @@
 
 
                <p class="InfomercialText" id="InfomercialText">Infomercial</p>
-               <img src="Images/Octagonheading.png" class="InfomercialHeading" id="InfomercialHeading">
+               <img decoding="async" style="image-rendering: auto;" src="Images/Octagonheading.png" class="InfomercialHeading" id="InfomercialHeading">
 
-                 <video controls  width="445" height="250" autoplay="" class="infomercial" poster="Images/InfomercialThumbnail.png">
+                 <!-- <video controls  width="445" height="250" autoplay="" class="infomercial" poster="Images/InfomercialThumbnail.png">
                     <source src="videos/infomercial.mp4" type="video/mp4"/>
-                  </video>
+                  </video> -->
+
+                  <div>
+                    <iframe class="infomercial" width="445" height="250" src="https://www.youtube.com/embed/OX5YVmhVvC4?si=owuNi61PbOeGCWMr&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
 
 
 
               <p class="PitchingText" id="PitchingText">Product Pitch</p>
-               <img src="Images/Octagonheading.png" class="PitchingHeading" id="PitchingHeading">
+               <img decoding="async" style="image-rendering: auto;" src="Images/Octagonheading.png" class="PitchingHeading" id="PitchingHeading">
 
-                 <video controls  width="445" height="250" autoplay="" class="pitching" poster="Images/PitchingThumbnail.png">
+                 <!-- <video controls  width="445" height="250" autoplay="" class="pitching" poster="Images/PitchingThumbnail.png">
                     <source src="videos/pitch.mp4" type="video/mp4"/>
-                  </video>
+                  </video> -->
+
+                 <div>
+                  <iframe class="pitching" width="445" height="250" src="https://www.youtube.com/embed/wday-6iL5QI?si=_sxef8sOxj7K3Xfs&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
 
               <p class="SolutionText" id="SolutionText">The &nbsp; Solution</p>
-               <img src="Images/Octagonheading.png" class="SolutionHeading" id="SolutionHeading">
+               <img decoding="async" style="image-rendering: auto;" src="Images/Octagonheading.png" class="SolutionHeading" id="SolutionHeading">
 
-                 <video controls  width="445" height="250" autoplay="" class="solution" poster="Images/SolutionThumbnail.png">
+                 <!-- <video controls  width="445" height="250" autoplay="" class="solution" poster="Images/SolutionThumbnail.png">
                     <source src="videos/Solution.mp4" type="video/mp4"/>
-                  </video>
+                  </video> -->
 
+                 <div>
+                  <iframe class="solution" width="445" height="250" src="https://www.youtube.com/embed/kg4iBmpOQts?si=62h7X0aM0YYQGo2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
 
   
 
@@ -280,7 +296,7 @@
          <a href="https://www.facebook.com/HAKAUNITYPH" class="FacebookLink">
                <div class="FooterDividerTwo">
            
-              <img src="Images/Facebooklogo.png" class="FacebookSize">
+              <img decoding="async" style="image-rendering: auto;" src="Images/Facebooklogo.png" class="FacebookSize">
               <p class="FacebookLinkMargin">HAKA UNITY Facebook Page</p>
             
               </div>
